@@ -19,6 +19,9 @@ img {
   background-color: black;
 }
 
+/* main
+ */
+
 .img-main {
   position: relative;
 }
@@ -28,6 +31,7 @@ img {
   right: 20%;
   top: 26%;
   font-size: 20px;
+  cursor: pointer;
 }
 .main-icon1 i {
   position: relative;
@@ -53,8 +57,19 @@ img {
   color: white;
   font-size: 13px;
 }
+
+/* Main 
+ */
+
+/* Case
+*/
+
+.case-img {
+  position: relative;
+}
+
 .ekrankarti {
-  border: 3px solid rgba(255, 255, 0, 0.616);
+  border: 3px solid green;
   width: 56%;
   height: 21%;
   position: absolute;
@@ -65,13 +80,15 @@ img {
   cursor: pointer;
   padding: 5px;
   transition: 1s ease all;
+  animation: borderAnimation1 3s infinite alternate;
 }
+
 .ekrankarti::-webkit-scrollbar {
   display: none;
 }
 .ekrankarti:hover {
   opacity: 1;
-  box-shadow: 1px 1px 5px 1px yellow;
+  box-shadow: 1px 1px 5px 1px green;
 }
 .ekrankarti p {
   display: none;
@@ -81,8 +98,16 @@ img {
   color: red;
 }
 
-.case-img {
-  position: relative;
+@keyframes borderAnimation1 {
+  0% {
+    border-color: rgb(0, 161, 0);
+  }
+  50% {
+    border-color: rgb(2, 109, 2);
+  }
+  100% {
+    border-color: rgb(1, 59, 1);
+  }
 }
 
 .ram {
@@ -97,6 +122,7 @@ img {
   cursor: pointer;
   padding: 5px;
   transition: 1s ease all;
+  animation: borderAnimation2 3s infinite alternate;
 }
 .ram:hover {
   opacity: 1;
@@ -109,3 +135,105 @@ img {
   display: none;
   color: white;
 }
+
+@keyframes borderAnimation2 {
+  0% {
+    border-color: rgba(255, 255, 0, 0.616);
+  }
+  50% {
+    border-color: yellow;
+  }
+  100% {
+    border-color: rgba(255, 255, 0, 0.616);
+  }
+}
+
+.cpu {
+  border: 3px solid rgba(255, 255, 0, 0.616);
+  width: 15%;
+  height: 19%;
+  position: absolute;
+  left: 27%;
+  top: 28%;
+  opacity: 0;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s ease all;
+  animation: borderAnimation 3s infinite alternate;
+}
+.cpu::-webkit-scrollbar {
+  display: none;
+}
+.cpu:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px 1px yellow;
+}
+.cpu p {
+  display: none;
+  color: white;
+}
+.cpu span {
+  color: red;
+}
+
+.fan {
+  border: 3px solid rgba(255, 255, 0, 0.616);
+  width: 64%;
+  height: 8%;
+  position: absolute;
+  left: 15%;
+  top: 14%;
+  opacity: 0;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s ease all;
+  animation: borderAnimation 3s infinite alternate;
+}
+.fan::-webkit-scrollbar {
+  display: none;
+}
+.fan:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px 1px yellow;
+}
+.fan p {
+  display: none;
+  color: white;
+}
+.fan span {
+  color: red;
+}
+
+.pcu {
+  border: 3px solid rgba(255, 255, 0, 0.616);
+  width: 22%;
+  height: 12%;
+  position: absolute;
+  left: 13%;
+  top: 77%;
+  opacity: 0;
+  overflow-y: scroll;
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s ease all;
+  animation: borderAnimation 3s infinite alternate;
+}
+.pcu::-webkit-scrollbar {
+  display: none;
+}
+.pcu:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px 1px yellow;
+}
+.pcu p {
+  display: none;
+  color: white;
+}
+.pcu span {
+  color: red;
+}
+
+/* case
+ */
